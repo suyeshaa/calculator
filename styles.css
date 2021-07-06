@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 150px;
+}
+
+.num-container {
+  display: grid;
+  /* justify-content: center;
+  align-content: center; */
+  margin: auto;
+  grid-template-columns: repeat(4, minmax(100px, 1fr));
+  grid-template-rows: repeat(4, auto);
+  width: 50%;
+}
+
+.num {
+  /* align-items: center;
+  justify-items: center; */
+  text-align: center;
+}
+
+#top {
+  width: 50%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.inp-box {
+  background-color: pink;
+  width: 45%;
+  height: 50px;
+  margin: auto;
+}
+
+.neonText {
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
