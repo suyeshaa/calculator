@@ -45,7 +45,7 @@ $("button").click((e) => {
     // console.log(eval(op[0] + op[1] + op[2]));
     operations();
     num = "";
-    op = [];
+    // op = [];
     newNum = "";
   }
 
@@ -53,6 +53,13 @@ $("button").click((e) => {
     op.push(num);
     op.pop();
     console.log(op);
+  }
+
+  if (curr == "RESET") {
+    op = [];
+    num = "";
+    newNum = "";
+    $(".inp-box").text(num) = ""
   }
 });
 
@@ -63,6 +70,7 @@ function operations() {
   });
 
   console.log(eval(newNum));
+  $(".inp-box").text((newNum));
 }
 
 // document.querySelector("button").addEventListener("click", (e) => {
