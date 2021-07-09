@@ -18,14 +18,25 @@ body {
   grid-template-columns: repeat(4, minmax(auto, 1fr));
   grid-template-rows: repeat(4, auto);
   width: auto;
-  grid-gap: 30px;
+  grid-gap: 25px;
+}
+
+#main {
+  border: 0.2rem solid #fff;
+  box-shadow: 0 0 17px 3px #fe01b1, 0 0 4px 2px #fe01b1;
+  border-radius: 50px;
+  margin: 20px auto;
+  width: 30%;
+  height: fit-content;
 }
 
 .box {
-  border: 0.2rem solid #fff;
-  box-shadow: 0 0 0.1rem #fff, 0 0 0.1rem #fff, 0 0 1rem #bc13fe,
-    0 0 0.7rem #bc13fe, 0 0 0.8rem #bc13fe, inset 0 0 0.3rem #bc13fe;
-  width: 43%;
+  /* border: 0.2rem solid #fff; */
+  /* box-shadow: 0 0 17px 3px #fe01b1, 0 0 4px 2px #fe01b1; */
+  /* box-shadow: 0 0 0.1rem #fff, 0 0 0.1rem #fff, 0 0 1rem #bc13fe,
+    0 0 0.7rem #bc13fe, 0 0 0.8rem #bc13fe, inset 0 0 0.3rem #bc13fe; */
+
+  /* width: 30%; */
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -37,7 +48,7 @@ body {
 .equals {
   padding: 30px 20px 10px 20px;
   margin: auto;
-  width: 98%;
+  width: 64%;
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -46,9 +57,10 @@ body {
 
 button {
   padding: 12px 0;
-  width: 100px;
+  width: 60px;
+  height: 50px;
   border: none;
-  border-radius: 5px;
+  border-radius: 15px;
   background-color: black;
   font-size: 18px;
   color: #fff;
@@ -59,47 +71,27 @@ button {
     0 0 151px rgb(0, 153, 255);
 }
 
-.num-container .num {
+.num {
   /* align-items: center;
   justify-items: center; */
   text-align: center;
   width: min-content;
   margin: 0;
-  border-radius: 5px;
-  border: 0.1rem solid #fff;
-  /* box-shadow: 120px 80px 40px 20px #0ff; */
-  box-shadow: 0 0 0.1rem #fff, 0 0 0.1rem #fff, 0 0 1rem rgb(208, 255, 0),
-    0 0 0.2rem rgb(208, 255, 0), 0 0 0.7rem rgb(208, 255, 0),
-    inset 0 0 0.2rem rgb(208, 255, 0);
-}
-
-.red {
-  /* border: none; */
-  box-shadow: 0 0 0.1rem #fff, 0 0 0.1rem #fff, 0 0 1rem rgb(255, 60, 0),
-    0 0 0.2rem rgb(255, 60, 0), 0 0 0.7rem rgb(255, 60, 0),
-    inset 0 0 0.2rem rgb(255, 60, 0) !important;
+  border-radius: 15px;
+  border: 0.2rem solid #fff;
+  box-shadow: 0 0 17px 3px #04d9ff, 0 0 4px 2px #04d9ff;
 }
 
 .equals button {
   /* padding: 0 50%; */
-  width: 95%;
-  border: 0.1rem solid #fff;
-}
-
-.grn button {
-  box-shadow: 0 0 0.1rem #fff, 0 0 0.1rem #fff, 0 0 1rem #0fa, 0 0 0.2rem #0fa,
-    0 0 0.7rem #0fa, inset 0 0 0.2rem #0fa !important;
-}
-
-.rd button {
-  box-shadow: 0 0 0.1rem #fff, 0 0 0.1rem #fff, 0 0 1rem rgb(255, 60, 0),
-    0 0 0.2rem rgb(255, 60, 0), 0 0 0.7rem rgb(255, 60, 0),
-    inset 0 0 0.2rem rgb(255, 60, 0) !important;
+  width: 80%;
 }
 
 .equals .num {
-  width: 100%;
+  width: 80%;
   text-align: center;
+  border-radius: 10px;
+  margin: 0 15px;
 }
 
 #top {
@@ -110,11 +102,11 @@ button {
 
 .inp-box {
   border: 0.2rem solid #fff;
-  box-shadow: 0 0 0.1rem #fff, 0 0 0.1rem #fff, 0 0 1rem #bc13fe,
-    0 0 0.7rem #bc13fe, 0 0 0.8rem #bc13fe, inset 0 0 0.3rem #bc13fe;
-  width: 43%;
-  height: 70px;
-  margin: 30px auto;
+  box-shadow: 0 0 17px 3px #04d9ff, 0 0 4px 2px #04d9ff;
+  border-radius: 18px !important;
+  width: 75%;
+  height: 90px;
+  margin: 30px auto 20px auto;
   padding: 20px;
   font-size: 18px;
   color: #fff;
@@ -123,16 +115,12 @@ button {
   border-radius: 5px;
 }
 
-.neonText {
-  color: #fff;
-  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff,
-    0 0 42px rgb(0, 119, 255), 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa,
-    0 0 151px #0fa;
+.img {
+  height: 70px;
+  width: 100px;
 }
 
-/* .oper {
-  border: 0.2rem solid #fff;
-  box-shadow: 0 0 0.1rem #fff, 0 0 0.1rem #fff, 0 0 1rem rgb(0, 119, 255),
-    0 0 0.7rem rgb(0, 119, 255), 0 0 0.8rem rgb(0, 119, 255),
-    inset 0 0 0.3rem rgb(0, 119, 255) !important;
-} */
+img {
+  transform: translate(75px, -50px);
+  margin: auto;
+}
